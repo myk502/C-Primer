@@ -5,7 +5,9 @@ int main(void)
 {
 	for(int i = 0; i < 10; i++)
 		a[i] = i;
-	auto it = a + 2;
-	cout << *begin(it) << endl;
+	vector<int> v(begin(a), end(a));
+	for(auto it:v)
+		cout << it << " ";
+	cout << endl;
 	return 0;
 }
