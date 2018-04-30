@@ -1,13 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-struct Test
-{
-	short x;
-	long val;
-};
 int main(void)
 {
-	string a("Hello Worlddddfdsifgasdifgdjasfasdjfglk;asdf;laskfgjasdilfjsda");
-	cout << sizeof(a) << endl;
+	const char* str = "Hello World!";
+	string a = static_cast<string>(str);
+	cout << a << endl;
 	return 0;
 }
