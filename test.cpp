@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+void fun(int, int);
 class Test
 {
 public:
@@ -10,6 +11,7 @@ public:
 };
 int main(void)
 {
+	fun(2,3);
  	vector<int> a{1, 2, 3};
 	auto it = a.cbegin();
 	cout << *it << endl;
