@@ -1,11 +1,13 @@
+#define NDEBUG
 #include<bits/stdc++.h>
 using namespace std;
-extern int fun(int x);
-
+int fun(int x)
+{
+	cout << __func__<<endl;
+}
 
 int main(void)
 {
-	const int x = fun(3);
-	cout << x << endl;
+	fun(3);
 	return 0;
 }
