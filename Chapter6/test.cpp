@@ -8,6 +8,8 @@ int fun(int x)
 
 int main(void)
 {
-	fun(3);
+	int x, y;
+	cin >> x >> y;
+	assert(cin);
 	return 0;
 }
