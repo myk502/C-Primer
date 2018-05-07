@@ -1,15 +1,14 @@
-#define NDEBUG
 #include<bits/stdc++.h>
 using namespace std;
-int fun(int x)
+
+constexpr int fun(int x)
 {
-	cout << __func__<<endl;
+	return x + 5;
 }
 
 int main(void)
 {
-	int x, y;
-	cin >> x >> y;
-	assert(cin);
+	int x = 3;
+	array<int, fun(x)> test;
 	return 0;
 }
